@@ -47,7 +47,41 @@ i{
   color: var(--white);
 }
 
+/* ----- start loader style -----*/
+
+.circle{
+  background: linear-gradient(90deg, #f84f63 0%, #f8792b 100%);
+}
+.dark .circle{
+  background: linear-gradient(90deg, #8079f0 0%, #82abf2 100%);
+}
+
+/* ----- start tab style -----*/
+
+.tab_active::before{
+  background: linear-gradient(90deg, #f84f63 0%, #f8792b 100%);
+  box-shadow: 0 8px 16px rgb(248 121 43 / 25%);
+}
+
+.tab::before{
+  background: linear-gradient(90deg, #f84f63 0%, #f8792b 100%);
+  box-shadow: 0 8px 16px rgb(248 121 43 / 25%);
+}
+
+.dark .tab_active::before {
+  background: linear-gradient(90deg, #8079f0 0%, #82abf2 100%);
+  box-shadow: 0 8px 16px rgb(131 173 243 / 25%);
+}
+
+.dark .tab::before{
+  background: linear-gradient(90deg, #8079f0 0%, #82abf2 100%);
+  box-shadow: 0 8px 16px rgb(131 173 243 / 25%);
+}
+
+/* ----- start profile style -----*/
+
 .back{
+  background-color: #f84f63;
   box-shadow: 10px 10px 0  #f84f63 , -10px -10px 0  #f8792b;
 }
 
@@ -61,6 +95,8 @@ i{
 .occupation{
   color: var(--orange);
 }
+
+/* ----- start social style -----*/
 
 .dark .social-menu ul li{
   background: linear-gradient(90deg, #8079f0 0%, #82abf2 100%);

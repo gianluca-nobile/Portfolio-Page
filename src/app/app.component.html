@@ -1,28 +1,20 @@
-<div id="main" class="container main">
+<div *ngIf="loading">
+  <app-loader></app-loader>
+</div>
+<div *ngIf="loading === false" id="main" class="container main">
   <div class="d-flex justify-content-between mt-4">
     <div class="d-flex">
-      <h4 class="me-4">HOME</h4><h4>ABOUT</h4>
+      <h4 (click)="switchTab('home')" [ngClass]="tab === 'home'? 'tab_active' : 'tab'" class="position-relative me-4">HOME</h4>
+      <h4 (click)="switchTab('about')" [ngClass]="tab === 'about'? 'tab_active' : 'tab'" class="position-relative">ABOUT</h4>
     </div>
     <div (click)="switchMode()">
       <h4><i [ngClass]="mode === 'dark'? 'bi bi-moon-fill' : 'bi bi-brightness-high-fill' "></i></h4>
     </div>
   </div>
-  <div>
-    <div class="profile_box">
-      <div class="profile_container">
-        <div class="back"></div>
-        <div class="profile"></div>
-      </div>
-      <div class="profile_infos">
-        <h1 class="title name">Gianluca Nobile</h1>
-        <h2 class="occupation">Software Developer</h2>
-      </div>
-      <div class="social-menu">
-        <ul>
-          <li><a href="https://twitter.com/" target="blank"><i class="bi bi-instagram"></i></a></li>
-          <li><a href="https://www.pinterest.com" target="blank"><i class="bi bi-linkedin"></i></a></li>
-        </ul>
-      </div>
-    </div>
+  <div *ngIf="tab === 'home'">
+    <app-home></app-home>
+  </div>
+  <div *ngIf="tab === 'about'">
+    <app-about></app-about>
   </div>
 </div>
