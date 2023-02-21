@@ -81,7 +81,7 @@ i{
 /* ----- start profile style -----*/
 
 .back{
-  background-color: #f84f63;
+  background-color: transparent;
   box-shadow: 10px 10px 0  #f84f63 , -10px -10px 0  #f8792b;
 }
 
