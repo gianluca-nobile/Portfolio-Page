@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+:root{
+  --white: #ececec;
+  --black: #1f1f1f;
+  --orange: #f84f63;
+  --purple: #8079f0;
+}
+
+.title{
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700;
+}
+
+body{
+  overflow: hidden;
+  background-color: var(--white);
+}
+.dark body{
+  background-color: var(--black);
+}
+h4{
+  color: var(--black);
+}
+.dark h4{
+  color: var(--white);
+}
+h1{
+  color: var(--black);
+}
+.dark h1{
+  color: var(--white);
+}
+i{
+  color: var(--black);
+}
+.dark i{
+  color: var(--white);
+}
+
+.back{
+  box-shadow: 10px 10px 0  #f84f63 , -10px -10px 0  #f8792b;
+}
+
+.dark .back{
+  box-shadow: 10px 10px 0  #8079f0 , -10px -10px 0  #82abf2;
+}
+
+.dark .occupation{
+  color: var(--purple);
+}
+.occupation{
+  color: var(--orange);
+}
+
+.dark .social-menu ul li{
+  background: linear-gradient(90deg, #8079f0 0%, #82abf2 100%);
+  box-shadow: 0 8px 16px rgb(131 173 243 / 25%);
+}
+
+.social-menu ul li{
+  background: linear-gradient(90deg, #f84f63 0%, #f8792b 100%);
+  box-shadow: 0 8px 16px rgb(248 121 43 / 25%);
+}
