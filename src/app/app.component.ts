@@ -21,7 +21,7 @@ export class AppComponent implements OnInit, AfterViewInit{
   ngAfterViewInit(): void {
     setTimeout(() => {
       this.loading = false;
-    }, 500)
+    }, 1000)
   }
 
   switchMode() {
