@@ -19,7 +19,9 @@ But I am not just a programmer! When I am not in front of the computer, you will
   constructor() { }
 
   ngOnInit(): void {
-    this.typeText();
+    setTimeout(() => {
+      this.typeText();
+    }, 500);
   }
 
   typeText() {
