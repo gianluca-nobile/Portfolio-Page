@@ -11,7 +11,10 @@
 
 body{
   --text-color: #1f1f1f;
-  --bg-color: #ececec;
+  --bg-color: #f2f1f6;
+  --bg-color2: #ffffff;
+  --bg-color3: #d1d0d5;
+  --bg-color4: #d7d7d7;
   --primary-color: #f84f63;
   --secondary-color: #f8792b;
   --box-shadow: 0 8px 16px rgb(248 121 43 / 25%)
@@ -19,17 +22,27 @@ body{
 
 .dark body{
   --text-color: #ececec;
-  --bg-color: #1f1f1f;
+  --bg-color: #000000;
+  --bg-color2: #1c1c1e;
+  --bg-color3: #2c2c2e;
+  --bg-color4: #353537;
   --primary-color: #8079f0;
   --secondary-color: #82abf2;
   --box-shadow: 0 8px 16px rgb(130 171 242 / 25%)
 }
+.dark .content-section{
+  --theme-bg-color: rgba(16 18 27 / 40%);
+  --border-color: rgba(113 119 144 / 25%);
+  --inactive-color: rgb(113 119 144 / 78%);
+  --button-inactive: rgb(249 250 251 / 55%);
+}
 
-:root{
-  --white: #ececec;
-  --black: #1f1f1f;
-  --orange: #f84f63;
-  --purple: #8079f0;
+.content-section {
+  --theme-bg-color: rgb(255 255 255 / 10%);
+  --border-color: rgb(255 255 255 / 35%);
+  --inactive-color: #333333;
+  --content-bg: rgb(146 151 179 / 13%);
+  --button-inactive: #3c3a3a;
 }
 
 .title{

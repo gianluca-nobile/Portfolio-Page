@@ -4,26 +4,6 @@
   padding: 0 !important;
 }
 
-.project{
-}
-.dark .content-section{
-  --theme-bg-color: rgba(16 18 27 / 40%);
-  --border-color: rgba(113 119 144 / 25%);
-  --inactive-color: rgb(113 119 144 / 78%);
-  --button-inactive: rgb(249 250 251 / 55%);
-}
-
-.content-section {
-  --theme-bg-color: rgb(255 255 255 / 31%);
-  --border-color: rgb(255 255 255 / 35%);
-  --inactive-color: #333333;
-  --content-bg: rgb(146 151 179 / 13%);
-  --button-inactive: #3c3a3a;
-}
-
-.content-section ul {
-  background-color: var(--theme-bg-color);
-}
 .content-section {
   margin-top: 30px;
   display: flex;
@@ -39,12 +19,11 @@
   width: 100%;
   height: 100%;
   justify-content: space-around;
-  background-color: var(--content-bg);
+  background-color: var(--bg-color2);
   padding-left: 0;
   margin: 0;
   border-radius: 14px;
   cursor: pointer;
-  box-shadow: var(--box-shadow);
 }
 .content-section ul li {
   list-style: none;
@@ -57,23 +36,22 @@
   white-space: nowrap;
   transition: 0.3s;
 }
+.content-section ul li:hover {
+  background-color: var(--bg-color3);
+}
 .content-section ul li:hover:first-child {
   border-radius: 14px 14px 0 0;
 }
 .content-section ul li:hover:last-child {
   border-radius: 0 0 14px 14px;
 }
-.content-section ul li:hover {
-  background-color: var(--theme-bg-color);
+
+.content-section ul li:hover{         /*rimuovere se aggiungo un progetto*/
+  border-radius: 14px !important;
 }
+
 .content-section ul li + li {
-  border-top: 1px solid var(--border-color);
-}
-.content-section ul svg {
-  width: 28px;
-  border-radius: 6px;
-  margin-right: 16px;
-  flex-shrink: 0;
+  border-top: 1px solid var(--bg-color4);
 }
 .button-wrapper {
   display: flex;
