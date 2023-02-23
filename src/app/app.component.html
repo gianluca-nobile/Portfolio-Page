@@ -1,8 +1,8 @@
 <div *ngIf="loading">
   <app-loader></app-loader>
 </div>
-<div *ngIf="loading === false" id="main" class="container main">
-  <div class="d-flex justify-content-between mt-4">
+<div *ngIf="loading === false" id="main" class="main">
+  <div class="container d-flex justify-content-between header">
     <div class="d-flex">
       <h4 (click)="switchTab('home')" [ngClass]="tab === 'home'? 'tab_active' : 'tab'" class="position-relative me-4">HOME</h4>
       <h4 (click)="switchTab('about')" [ngClass]="tab === 'about'? 'tab_active' : 'tab'" class="position-relative">ABOUT</h4>
@@ -11,10 +11,10 @@
       <h4><i [ngClass]="mode === 'dark'? 'bi bi-moon-fill' : 'bi bi-brightness-high-fill' "></i></h4>
     </div>
   </div>
-  <div *ngIf="tab === 'home'">
+  <div class="container" *ngIf="tab === 'home'">
     <app-home></app-home>
   </div>
-  <div *ngIf="tab === 'about'">
+  <div class="container" *ngIf="tab === 'about'">
     <app-about [mode]="mode"></app-about>
   </div>
 </div>

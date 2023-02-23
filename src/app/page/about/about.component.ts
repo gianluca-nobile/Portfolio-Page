@@ -10,8 +10,9 @@ export class AboutComponent {
   @Input() mode: string = 'dark'
 
   text = '';
-  fullText = `Il mio testo con un'immagine e un link: <a href="https://www.example.com" target="_blank">esempio</a>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has sur`;
+  fullText = `Ciao a tutti! Sono Gianluca,<br> un software developer. Attualmente lavoro presso <a href="https://negg.group/" target="_blank">Negg</a>. Ho una grande passione per la programmazione e ho esperienza in HTML, CSS, Bootstrap, Javascript e Angular. Sono costantemente alla ricerca di nuove sfide e opportunità per migliorare le mie competenze.
+
+Ma non sono solo un programmatore! Quando non sono davanti al computer, mi troverai a fare kite surf o snowboard. Amo mettermi alla prova e superare i miei limiti, sia in campo lavorativo che personale.`;
   textIndex = 0;
   typingSpeed = 50;
 

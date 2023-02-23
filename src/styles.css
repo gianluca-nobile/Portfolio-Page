@@ -17,7 +17,8 @@ body{
   --bg-color4: #d7d7d7;
   --primary-color: #f84f63;
   --secondary-color: #f8792b;
-  --box-shadow: 0 8px 16px rgb(248 121 43 / 25%)
+  --box-shadow: 0 8px 16px rgb(248 121 43 / 25%);
+  --scrollbar: #353537;
 }
 
 .dark body{
@@ -28,26 +29,23 @@ body{
   --bg-color4: #353537;
   --primary-color: #8079f0;
   --secondary-color: #82abf2;
-  --box-shadow: 0 8px 16px rgb(130 171 242 / 25%)
-}
-.dark .content-section{
-  --theme-bg-color: rgba(16 18 27 / 40%);
-  --border-color: rgba(113 119 144 / 25%);
-  --inactive-color: rgb(113 119 144 / 78%);
-  --button-inactive: rgb(249 250 251 / 55%);
+  --box-shadow: 0 8px 16px rgb(130 171 242 / 25%);
+  --scrollbar: #d1d0d5;
 }
 
-.content-section {
-  --theme-bg-color: rgb(255 255 255 / 10%);
-  --border-color: rgb(255 255 255 / 35%);
-  --inactive-color: #333333;
-  --content-bg: rgb(146 151 179 / 13%);
-  --button-inactive: #3c3a3a;
-}
+/* ----- start scrollbar -----*/
 
-.title{
-  font-family: "Poppins", sans-serif !important;
-  font-weight: 700;
+::-webkit-scrollbar-track {
+  border-radius: 0.125rem;
+  background-color: var(--bg-color);
+}
+::-webkit-scrollbar {
+  width: 0.25rem;
+  border-radius: 0.125rem;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.125rem;
+  background-color: var(--scrollbar);
 }
 
 body{
@@ -55,20 +53,26 @@ body{
   background-color: var(--bg-color);
 }
 
-h4{
-  color: var(--text-color);
-}
-
-h3{
-  color: var(--text-color);
-}
-
 h1{
   color: var(--text-color);
 }
-
+h4{
+  color: var(--text-color);
+}
+h5{
+  color: var(--text-color);
+}
+a{
+  text-decoration-line: none;
+  color: var(--primary-color);
+}
 i{
   color: var(--text-color);
+}
+
+.title{
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700;
 }
 
 /* ----- start loader style -----*/

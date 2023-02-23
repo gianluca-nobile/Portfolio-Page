@@ -1,17 +1,17 @@
-<div class="container">
-  <div class="mt-4">
+<div class="container d-flex flex-column overflow-auto">
+  <div class="py-2">
     <div class="about text-center d-flex justify-content-center">
-      <h3 class="text-wrap d-grid align-content-center" [innerHTML]="text"></h3>
+      <h5 class="text-wrap m-auto" [innerHTML]="text"></h5>
     </div>
   </div>
-  <div class="project">
+  <div class="pb-4 project">
     <div class="content-section">
       <div class="content-section-title">Project</div>
       <ul>
         <li class="adobe-product">
           <div class="d-flex">
             <div class="products">
-              <img src="{{mode === 'dark'? 'assets/project/vize.png' : 'assets/project/vize-black.png'}}">
+              <img src="{{mode === 'dark'? 'assets/project/vize.png' : 'assets/project/vize-black.png'}}" alt="vize">
             </div>
             <h6 class="content-section-title my-auto">Vize</h6>
           </div>
