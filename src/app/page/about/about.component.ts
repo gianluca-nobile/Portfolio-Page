@@ -10,9 +10,9 @@ export class AboutComponent {
   @Input() mode: string = 'dark'
 
   text = '';
-  fullText = `Hi everyone! I'm Gianluca, a software developer.<br> Currently, I work at <a href="https://negg.group/" target="_blank">Negg</a>. I have a great passion for programming and have experience in HTML, CSS, Bootstrap, Javascript, and Angular. I am constantly looking for new challenges and opportunities to improve my skills.
+  fullText = `<  Hi everyone! I'm Gianluca, a software developer.<br> Currently, I work at <a href="https://negg.group/" target="_blank">Negg</a>. I have a great passion for programming and have experience in HTML, CSS, Bootstrap, Javascript, and Angular. I am constantly looking for new challenges and opportunities to improve my skills.
 
-But I am not just a programmer! When I am not in front of the computer, you will find me kite surfing or snowboarding. I love to challenge myself and push my limits, both professionally and personally.`;
+But I am not just a software developer! When I am not in front of the computer, you will find me kite surfing or snowboarding. I love to challenge myself and push my limits, both professionally and personally.  />`;
   textIndex = 0;
   typingSpeed = 50;
 
