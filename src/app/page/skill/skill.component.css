@@ -1,9 +1,23 @@
-.about{
-  height: 60vh;
+.progress {
+  background: var(--bg-color);
+
+}
+
+.progress-bar{
+  color: var(--text-color);
+  background: var(--primary-color);
+
+
+}
+
+.content-section ul canvas{
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 600px !important;
+  max-width: 600px !important;
 }
 
 .content-section {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -29,10 +43,15 @@
   align-items: center;
   font-size: 16px;
   width: 100%;
-  height: 60px;
+  min-height: 60px;
   white-space: nowrap;
   transition: 0.3s;
 }
+
+.chart-section ul li:hover{
+  border-radius: 14px !important;
+}
+
 .content-section ul li:hover {
   background-color: var(--bg-color3);
 }
@@ -43,48 +62,10 @@
   border-radius: 0 0 14px 14px;
 }
 
-.content-section ul li:hover{         /*rimuovere se aggiungo un progetto*/
-  border-radius: 14px !important;
-}
-
 .content-section ul li + li {
   border-top: 1px solid var(--bg-color4);
 }
-.button-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 187px;
-  margin-left: auto;
-}
 
-.products {
-  display: flex;
-  align-items: center;
-  width: 60px;
-}
-
-.products img{
-  width: 50px;
-}
-
-.content-button {
-  border: none;
-  padding: 8px 26px;
-  color: #fff;
-  border-radius: 20px;
-  margin-top: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  white-space: nowrap;
-}
-.status-button {
-  font-size: 15px;
-  margin-top: 0;
-  padding: 6px 24px;
-}
-.status-button.open {
-  background: none;
-  color: var(--text-color);
-  border: 1px solid var(--text-color);
+.products i{
+  font-size: 1.4rem
 }

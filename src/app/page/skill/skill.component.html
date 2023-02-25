@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-lg-8">
+    <div class="content-section chart-section mb-4">
+      <div class="content-section-title">Skill</div>
+      <ul>
+        <!--      <li *ngFor="let skill of skill" class="adobe-product">-->
+        <!--        <div class="row w-100">-->
+        <!--          <div class="col-4">-->
+        <!--            <i class="{{skill.icon}} mr-2"></i>-->
+        <!--            <h6 class="content-section-title my-auto">{{skill.name}}</h6>-->
+        <!--          </div>-->
+        <!--          <div class="col-8">-->
+        <!--            <div class="progress h-100" role="progressbar" aria-label="Example with label">-->
+        <!--              <div class="progress-bar" style="width: {{skill.value * 10}}%">{{skill.value + ' / 10'}}</div>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--        </div>-->
+        <!--      </li>-->
+        <li class="p-4 d-flex justify-content-center">
+          <canvas baseChart
+                  [datasets]="config.datasets"
+                  [options]="config.options"
+                  [labels]="config.labels"
+                  [legend]="false"
+                  [type]="'radar'">
+          </canvas>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="content-section mb-4">
+      <div class="content-section-title">Soft skill</div>
+      <ul>
+        <li *ngFor="let skill of softSkill" class="adobe-product">
+          <div class="d-flex">
+            <div class="products me-2">
+              <i class="{{skill.icon}}"></i>
+            </div>
+            <h6 class="content-section-title my-auto">{{skill.name}}</h6>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="content-section mb-4">
+      <div class="content-section-title">Interest</div>
+      <ul>
+        <li *ngFor="let int of interest" class="adobe-product">
+          <div class="d-flex">
+            <div class="products me-2">
+              <i class="{{int.icon}}"></i>
+            </div>
+            <h6 class="content-section-title my-auto">{{int.name}}</h6>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
