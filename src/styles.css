@@ -66,6 +66,9 @@ a{
   text-decoration-line: none;
   color: var(--primary-color);
 }
+a:hover{
+  color: var(--secondary-color);
+}
 i{
   color: var(--text-color);
 }
