@@ -5,10 +5,14 @@
 
 .header{
   position: sticky;
-  height: 12vh;
+  height: 15vh;
   top: 0;
   background-color: var(--bg-color);
   align-items: center;
+}
+
+.content{
+  height: 85vh;
 }
 
 .tab::before {

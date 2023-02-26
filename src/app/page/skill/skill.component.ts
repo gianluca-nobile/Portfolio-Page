@@ -12,14 +12,6 @@ export class SkillComponent implements OnInit, OnChanges {
 
   config : any;
 
-  skill = [
-    {name: 'HTML & CSS', icon: '', value: 8},
-    {name: 'Bootstrap', icon: '', value: 7},
-    {name: 'JavaScript', icon: '', value: 8},
-    {name: 'Angular', icon: '', value: 7},
-    {name: 'Git', icon: '', value: 8},
-  ]
-
   softSkill = [
     {name: 'TEAM WORKING', icon: 'bi bi-people'},
     {name: 'PROBLEM SOLVING', icon: 'bi bi-lightbulb'},

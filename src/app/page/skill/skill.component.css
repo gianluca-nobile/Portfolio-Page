@@ -1,13 +1,5 @@
-.progress {
-  background: var(--bg-color);
-
-}
-
-.progress-bar{
-  color: var(--text-color);
-  background: var(--primary-color);
-
-
+.section{
+  max-height: 80vh;
 }
 
 .content-section ul canvas{
@@ -29,6 +21,7 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
+  max-height: 78vh;
   justify-content: space-around;
   background-color: var(--bg-color2);
   padding-left: 0;
