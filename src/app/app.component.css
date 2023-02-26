@@ -1,5 +1,5 @@
 .main{
-  height: 100vh;
+  height: 95vh;
 }
 
 .header{
@@ -11,7 +11,7 @@
 }
 
 .content{
-  max-height: 88vh;
+  max-height: 83vh;
 }
 
 .tab::before {
