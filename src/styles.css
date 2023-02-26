@@ -50,7 +50,6 @@ body{
 }
 
 body{
-  overflow: hidden;
   background-color: var(--bg-color);
 }
 
