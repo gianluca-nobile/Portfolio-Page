@@ -1,6 +1,6 @@
 .content{
   max-height: 85vh;
-  overflow-y: auto;
+  overflow-y: auto !important;
 }
 .section{
   max-height: 80vh;

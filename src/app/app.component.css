@@ -11,7 +11,7 @@
 }
 
 .content{
-overflow: hidden;
+  max-height: 88vh;
 }
 
 .tab::before {
