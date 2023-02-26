@@ -1,7 +1,7 @@
 <div *ngIf="loading">
   <app-loader></app-loader>
 </div>
-<div *ngIf="loading === false" id="main" class="main">
+<div *ngIf="loading === false" id="main" class="main pb-4">
   <div class="container d-flex justify-content-between header">
     <div class="d-flex">
       <h4 (click)="switchTab('home')" [ngClass]="tab === 'home'? 'tab_active' : 'tab'" class="position-relative me-4">HOME</h4>
